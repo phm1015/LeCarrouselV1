@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/layMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Rose"
+            android:textColor="@color/gray1"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tvProductDescrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="-2dp"
+            android:layout_marginStart="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Single Red Rose"
+            android:textColor="@color/gray2"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:id="@+id/layVideoView"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="120dp">
+
+            <include
+                android:id="@+id/layVideo"
+                layout="@layout/row_simple_video_view" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvProductPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:text="123"
+                    android:textColor="@color/yellow"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tvProductCurrency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qar"
+                    android:textColor="@color/gray2"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivProductIsFavorite"
+                android:layout_width="40dp"
+                android:layout_height="37dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_heart_empty" />
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

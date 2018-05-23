@@ -1,0 +1,65 @@
+<resources>
+    <!--ERRORS-->
+    <!--Network-->
+    <string name="err_network_not_available">Internet connection not available.\nPlease check your settings and try again!</string>
+    <string name="error">Error</string>
+    <!--General-->
+    <string name="ok">Ok</string>
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+
+    <!--common-->
+    <string name="something_went_wrong">Oops seems like something went wrong!!</string>
+
+    <!--alert-->
+    <string name="enter_name_msg">Name is required</string>
+    <string name="enter_valid_name_msg">Enter only A-Z values for name</string>
+    <string name="enter_email_msg">Email Address is required</string>
+    <string name="enter_password_msg">Password is required</string>
+    <string name="enter_valid_email_msg">Please enter a valid email address</string>
+    <string name="enter_confirm_password_msg">Confirm password is required</string>
+    <string name="password_confirm_password_same_msg">Password and confirm password should be same</string>
+    <string name="password_new_confirm_password_same_msg">New password and confirm new password should match.</string>
+    <string name="password_minimum_character_msg">Password should be minimum 6 characters</string>
+    <string name="enter_mobile_no_msg">Mobile number is required</string>
+    <string name="enter_valid_mobile_no_msg">Please enter valid mobile number</string>
+    <string name="data_not_found">Data not found</string>
+    <string name="new_password_old_password_same_msg">Old password and new password cannot be same</string>
+
+    <!--change password-->
+    <string name="enter_old_pass_msg">Old password is required</string>
+    <string name="enter_new_pass_msg">New password is required</string>
+
+    <!--forgot password-->
+    <string name="enter_email_or_mobile_msg">Email address or Mobile number is required.</string>
+
+    <!--Add Card-->
+    <string name="enter_card_num_msg">Card number is required</string>
+    <string name="enter_card_name_msg">Enter name on card</string>
+    <string name="enter_expiry_date_require_msg">Expiry date is required</string>
+    <string name="error_Please_enter_valid_expirydate_card">Select valid expiry date</string>
+    <string name="enter_valid_card_no_msg">Enter valid card number</string>
+    <string name="enter_security_code_msg">Enter cvv</string>
+    <string name="enter_valid_security_code_msg">Enter valid cvv</string>
+
+
+    <!--add address-->
+    <string name="enter_contact_name">Contact name is required</string>
+    <string name="enter_building_msg">Building No name is required</string>
+    <string name="enter_street_no_msg">Street No name is required</string>
+    <string name="enter_zone_msg">Zone is required</string>
+    <string name="enter_city_msg">City name is required</string>
+    <string name="enter_address_msg">Street address is required</string>
+
+    <!--Change Password-->
+    <string name="enter_otp_code">OTP is required</string>
+
+    <!--review order-->
+    <string name="select_atleast_one_address_msg">Select atleast one address or Add new address</string>
+    <string name="select_payment_method_msg">Select Payment method</string>
+    <string name="enter_valid_delivery_date">Enter valid delivery date</string>
+    <string name="enter_delivery_date">Delivery date is required</string>
+
+    <!--register-->
+    <string name="enter_security_code">Security code is required</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/layMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include
+            android:id="@+id/layHeader"
+            layout="@layout/header" />
+
+        <LinearLayout
+            android:id="@+id/layUserInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layHeader"
+            android:orientation="vertical"
+            android:background="@color/gray6">
+
+            <TextView
+                android:id="@+id/tvRecoverPassLabel"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/yellow"
+                android:gravity="center"
+                android:text="@string/greet_msg_text"
+                android:textColor="@color/brown"
+                android:textSize="10dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvGreetList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

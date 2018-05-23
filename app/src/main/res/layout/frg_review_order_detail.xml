@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvReviewOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvStdCardLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/std_card_message"
+                            android:textColor="@color/brown"
+                            android:textSize="12dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <LinearLayout
+                            android:id="@+id/layStdMsg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/tvStdCardMsg"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tap_and_select_msg"
+                                android:textColor="@color/gray7"
+                                android:textSize="14dp" />
+
+                            <ImageView
+                                android:layout_width="11dp"
+                                android:layout_height="7dp"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginTop="4dp"
+                                android:src="@drawable/ic_down_arrow_qty" />
+
+                            <Spinner
+                                android:id="@+id/spGreetMsg"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@color/white"
+                                android:popupBackground="@color/colorPrimaryDark"
+                                android:spinnerMode="dialog"
+                                android:textColor="#ffffff"
+                                android:textSize="0dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layRbStdMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="10dp">
+                        <RadioButton
+                            android:id="@+id/rbStdMsg"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/selector_radio"
+                            android:button="@null"
+                            android:clickable="false" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/gray5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvCardMsgLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/custom_card_message"
+                            android:textColor="@color/brown"
+                            android:textSize="12dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <EditText
+                            android:id="@+id/etCardMessage"
+                            style="@style/stl_editTxt"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/type_card_message"
+                            android:lines="2"
+                            android:maxLines="2"
+                            android:scrollbars="vertical"
+                            android:singleLine="false" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layRbCustomMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="10dp">
+                        <RadioButton
+                            android:id="@+id/rbCustomMsg"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/selector_radio"
+                            android:button="@null"
+                            android:clickable="false" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/gray5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvExpecDateLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/expected_delivery_date"
+                        android:textColor="@color/brown"
+                        android:textSize="12dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/layExpecDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="60dp"
+                            android:paddingStart="10dp"
+                            android:paddingTop="10dp">
+
+                            <TextView
+                                android:id="@+id/tvExpecDeliveryDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/date_format_text"
+                                android:textColor="@color/gray7"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="11dp"
+                                android:layout_height="7dp"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/ic_down_arrow_qty" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layPrefTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp">
+
+                            <TextView
+                                android:id="@+id/tvPrefTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/date_format_text"
+                                android:textColor="@color/gray7"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="11dp"
+                                android:layout_height="7dp"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/ic_down_arrow_qty" />
+
+                            <Spinner
+                                android:id="@+id/spPrefTime"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@color/white"
+                                android:popupBackground="@color/colorPrimaryDark"
+                                android:spinnerMode="dialog"
+                                android:textColor="#ffffff"
+                                android:textSize="0dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!--<LinearLayout
+                        android:id="@+id/layExpecDate"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layPrefTime"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="bottom"
+                        android:layout_height="match_parent">
+                        &lt;!&ndash;<TextView
+                            android:id="@+id/tvPrefTimeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/prefered_time"
+                            android:textColor="@color/brown"
+                            android:textSize="12dp" />&ndash;&gt;
+
+
+                    </LinearLayout>-->
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/gray5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tvCouponCodeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/coupon_code"
+                            android:textColor="@color/brown"
+                            android:textSize="12dp" />
+
+
+                        <com.lecarrousel.customview.CustomEditText
+                            android:id="@+id/etCouponCode"
+                            style="@style/stl_editTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/enter_your_code" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/layDiscountPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tvMinus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginTop="5dp"
+                            android:text="-"
+                            android:textColor="@color/yellow"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tvDiscountPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/yellow"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tvCurrencyDis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/qar"
+                            android:textAlignment="0"
+                            android:textColor="@color/gray2"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/gray5" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/white"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="10dp">
+
+                    <TextView
+                        android:id="@+id/tvTotalLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/total"
+                        android:textColor="@color/brown"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tvTotalPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toStartOf="@+id/tvCurrencyTotal"
+                        android:textColor="@color/yellow"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tvCurrencyTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="17dp"
+                        android:text="@string/qar"
+                        android:textColor="@color/gray2"
+                        android:textSize="10dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_background_yellow"
+                    android:gravity="center"
+                    android:text="@string/confirm"
+                    android:textColor="@color/brown"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

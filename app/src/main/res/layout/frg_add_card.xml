@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/layMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray6"
+        android:orientation="vertical"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:text="@string/add_new_card"
+            android:textColor="@color/brown"
+            android:textSize="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCardNum"
+                        style="@style/stl_txt"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/card_num" />
+
+                    <EditText
+                        android:id="@+id/etCardNum"
+                        style="@style/stl_editTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:hint="@string/hint_enter_card_num"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="19"
+                        android:nextFocusDown="@+id/etCardName" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View style="@style/stl_view" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCardName"
+                        style="@style/stl_txt"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/name_on_card" />
+
+                    <EditText
+                        android:id="@+id/etCardName"
+                        style="@style/stl_editTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:hint="@string/hint_enter_name_on_card"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLength="50" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View style="@style/stl_view" />
+
+            <RelativeLayout
+                android:id="@+id/layExpiryDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvExpiryDateLabel"
+                        style="@style/stl_txt"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/expiry_date" />
+
+                    <TextView
+                        android:id="@+id/tvExpiryDate"
+                        style="@style/stl_editTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:hint="@string/hint_enter_expiry_date"
+                        android:maxLength="10" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View style="@style/stl_view" />
+
+            <RelativeLayout
+                android:id="@+id/layCvv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCvvLabel"
+                        style="@style/stl_txt"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/cvv" />
+
+                    <EditText
+                        android:id="@+id/etCVV"
+                        style="@style/stl_editTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:hint="@string/hint_enter_security_code"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="3" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View style="@style/stl_view" />
+
+            <RelativeLayout
+                android:id="@+id/laySaveCard"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvSaveCardLabel"
+                    style="@style/stl_txt"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/save_card_for_later_use" />
+
+                <CheckBox
+                    android:id="@+id/cbSave"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_radio"
+                    android:button="@null"
+                    android:clickable="false" />
+
+            </RelativeLayout>
+
+            <View style="@style/stl_view" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvConfirm"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_background_yellow"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="@color/brown"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tvDelete"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_background_yellow"
+                android:gravity="center"
+                android:text="@string/delete"
+                android:textColor="@color/brown"
+                android:textSize="14dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

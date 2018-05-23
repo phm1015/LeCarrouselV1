@@ -1,0 +1,69 @@
+<resources>
+    <!--ERRORS-->
+    <!--Network-->
+    <string name="err_network_not_available">الاتصال بشبكة الانترنت لا المتاحة. يرجى التحقق من إعداداتك وحاول مرة أخرى!</string>
+    <string name="error">خطا</string>
+    <!--General-->
+    <string name="ok">نعم</string>
+    <string name="no">لا</string>
+    <string name="yes">نعم</string>
+
+    <!--common-->
+    <string name="something_went_wrong">عذرا تبين ان هنالك خطا</string>
+
+    <!--alert-->
+    <string name="enter_name_msg">يجب ادخال الآسم</string>
+    <string name="enter_valid_name_msg">آدخل حروف فقط من آ الى ي</string>
+    <string name="enter_email_msg">يجب ادخال البريد الآلكتروني</string>
+    <string name="enter_email_msg_register">يجب ادخال البريد الآلكتروني</string>
+    <string name="enter_password_msg">يجب إدخال كلمة السر</string>
+    <string name="enter_valid_email_msg">الرجاء إدخال إيميل صحيح</string>
+    <string name="enter_confirm_password_msg">يجب تاكيد كلمة السر</string>
+    <string name="password_confirm_password_same_msg">كلمة السر وتاكيد كلمة السر لا تتطابق</string>
+    <string name="password_new_confirm_password_same_msg">كلمة السر وتأكيد كلمة السر يجب ان تكون مطابقة</string>
+    <string name="password_minimum_character_msg">كلمة السر يجب ان لا تقل عن ٦ احرف</string>
+    <string name="enter_mobile_no_msg">يجب ادخال رقم الموبايل</string>
+    <string name="enter_valid_mobile_no_msg">يجب ادخال رقم موبايل صحيح من ٨ ارقام</string>
+    <string name="data_not_found">لم يتم العثور على البيانات</string>
+    <string name="new_password_old_password_same_msg">كلمة السر الجديدة يجب ان تختلف عن القديمة</string>
+
+    <!--forgot password-->
+    <string name="enter_email_or_mobile_msg">ادخل البريد الآلكتروني او رقم الموبايل</string>
+
+    <!--change password-->
+    <string name="enter_old_pass_msg">يجب ادخال كلمة السر</string>
+    <string name="enter_new_pass_msg">يجب ادخال كلمة السر الجديدة</string>
+
+
+    <!--Add Card-->
+    <string name="enter_card_num_msg">يجب ادخال رقم البطاقة</string>
+    <string name="enter_card_name_msg">يجب ادخال الاسم</string>
+    <string name="enter_expiry_date_require_msg">ضع تارىخ انتهاء الصلاحية</string>
+    <string name="error_Please_enter_valid_expirydate_card">يجب ادخال صلاحية البطاقة بطريقة صحيحة</string>
+    <string name="enter_valid_card_no_msg">يجب ادخال تاريخ الصلاحية</string>
+    <string name="enter_security_code_msg">يجب ادخال الرقم السري</string>
+    <string name="enter_valid_security_code_msg">يجب ادخال الرقم السري للبطاقة بصورة صحيحة</string>
+
+
+    <!--add address-->
+    <string name="enter_building_msg">مطلوب مبنى رقم</string>
+    <string name="enter_street_no_msg">يجب ادخال عنوان الشارع</string>
+    <string name="enter_zone_msg">المنطقة مطلوبة</string>
+    <string name="enter_city_msg">يجب ادخال اسم المدينة</string>
+    <string name="enter_contact_name">يجب ادخال الأسم</string>
+    <string name="enter_address_msg">مطلوب عنوان الشارع</string>
+
+
+
+    <!--Change Password-->
+    <string name="enter_otp_code">مكتب المدعي العام مطلوب</string>
+
+    <!--review order-->
+    <string name="select_atleast_one_address_msg">يجب ان تختار عنوان او تضف عنوان</string>
+    <string name="select_payment_method_msg">آختر طريقة الدفع</string>
+    <string name="enter_valid_delivery_date">أدخل تاريخ تسليم صالح</string>
+    <string name="enter_delivery_date">تاريخ التسليم مطلوب.</string>
+
+    <!--register-->
+    <string name="enter_security_code">يجب ادخال رمز التفعيل</string>
+</resources>

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray6"
+            android:orientation="vertical"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvAddressList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/layNewAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvOtherAddressLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/deliver_to_other_address"
+                        android:textColor="@color/brown"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/rbOtherAddress"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/selector_radio"
+                    android:button="@null"
+                    android:clickable="false" />
+
+            </LinearLayout>
+
+            <View style="@style/stl_view" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/ivContactName"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvContactNameLabel"
+                        style="@style/stl_txt"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/contact_name" />
+
+                    <EditText
+                        android:id="@+id/etContactName"
+                        style="@style/stl_editTxt"
+                        android:layout_marginEnd="5dp"
+                        android:enabled="false"
+                        android:hint="@string/hint_enter_name"
+                        android:imeOptions="actionNext"
+                        android:maxLength="50" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivContactName"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="2dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_user" />
+            </RelativeLayout>
+
+            <View style="@style/stl_view" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/ivStreetAddress"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvStreetAddress"
+                        style="@style/stl_txt"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/street_address" />
+
+                    <EditText
+                        android:id="@+id/etStreetAddress"
+                        style="@style/stl_editTxt"
+                        android:layout_marginEnd="5dp"
+                        android:enabled="false"
+                        android:hint="@string/hint_enter_address"
+                        android:imeOptions="actionNext" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivStreetAddress"
+                    android:layout_width="24dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="2dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_address" />
+            </RelativeLayout>
+
+            <View style="@style/stl_view" />
+
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/ivCity"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCity"
+                        style="@style/stl_txt"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/city" />
+
+                    <EditText
+                        android:id="@+id/etCity"
+                        style="@style/stl_editTxt"
+                        android:layout_marginEnd="5dp"
+                        android:enabled="false"
+                        android:hint="@string/hint_enter_city"
+                        android:imeOptions="actionNext"
+                        android:maxLength="30" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivCity"
+                    android:layout_width="24dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="2dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_address" />
+            </RelativeLayout>
+
+            <View style="@style/stl_view" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tvBuilding"
+                        style="@style/stl_txt"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/building" />
+
+                    <EditText
+                        android:id="@+id/etBuildingNo"
+                        style="@style/stl_editTxt"
+                        android:enabled="false"
+                        android:hint="@string/hint_address_plate"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="10" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tvStreetNo"
+                        style="@style/stl_txt"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/street" />
+
+                    <EditText
+                        android:id="@+id/etStreetNo"
+                        style="@style/stl_editTxt"
+                        android:enabled="false"
+                        android:hint="@string/hint_address_plate"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="10" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tvZone"
+                        style="@style/stl_txt"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/zone" />
+
+                    <EditText
+                        android:id="@+id/etZone"
+                        style="@style/stl_editTxt"
+                        android:enabled="false"
+                        android:hint="@string/hint_address_plate"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="10" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/stl_view" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/ivCountryFlag"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblCountry"
+                        style="@style/stl_txt"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/country" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spCountry"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_below="@+id/tvQuantityLabel"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/white"
+                            android:popupBackground="@color/colorPrimaryDark"
+                            android:spinnerMode="dialog"
+                            android:textColor="#ffffff"
+                            android:textSize="0dp"
+                            android:visibility="visible" />
+
+                        <LinearLayout
+                            android:id="@+id/layCountry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvQuantityLabel"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/tvCountry"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="QUATAR"
+                                android:textColor="@color/brown"
+                                android:textSize="14dp" />
+
+                            <ImageView
+                                android:layout_width="11dp"
+                                android:layout_height="7dp"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_down_arrow_qty"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivCountryFlag"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="2dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_country" />
+            </RelativeLayout>
+
+            <View style="@style/stl_view" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <include
+                    android:id="@+id/layMobileEdit"
+                    layout="@layout/edit_text_mobile" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvBack"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_background_yellow"
+                    android:gravity="center"
+                    android:text="@string/back"
+                    android:textColor="@color/brown"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tvConfirm"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_background_yellow"
+                    android:gravity="center"
+                    android:text="@string/confirm"
+                    android:textColor="@color/brown"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

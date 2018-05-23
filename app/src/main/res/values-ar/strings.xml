@@ -1,0 +1,208 @@
+<resources>
+    <string name="app_name">لو كاروسيل</string>
+
+    <!--Login-->
+    <string name="english">ENGLISH</string>
+    <string name="arabic">العربية</string>
+    <string name="email_address">البريد الإلكتروني</string>
+    <string name="password">كلمة السر</string>
+    <string name="skip">الدخول بدون تسجيل</string>
+    <string name="login">حياكم الله</string>
+    <string name="create_new_account">إنشاء حساب جديد</string>
+    <string name="have_an_account">لديك حساب مسبقا؟تسجيل دخول هنا</string>
+    <string name="forgot_password"> نسيت كلمة السر؟ اضغط هنا للآسترجاع</string>
+
+    <!--register-->
+    <string name="register_account">قم بتسجيل حسابك</string>
+    <string name="mobile_number">رقم الموبايل</string>
+    <string name="register">تسجيل</string>
+    <string name="name">الأسم</string>
+    <string name="confirm_password">تاكيد كلمة السر</string>
+    <string name="country">المدينة</string>
+    <string name="verification">تاكيد التفعيل</string>
+    <string name="enter_verification_code">أدخل رمز التفعيل</string>
+    <string name="proceed">تقدم</string>
+    <string name="by_signing_up">من خلال الاشتراك، فإنك توافق على</string>
+    <string name="terms_condition_policy">سياسة البنود والشروط</string>
+
+    <!--recover pass-->
+    <string name="or">أو</string> 
+    <string name="recover_password">ارتجاع كلمة السر</string>
+    <string name="enter_email_mobile">ادخل البريد الإلكتروني او رقم الموبايل الذي ادخلته عند التسجيل وسنقوم بارسال رقم التفعيل لكي يمكنك اعادة برمجة رمز دخول جديد</string>
+    <string name="reset_password">إعادة تعيين كلمة المرور</string>
+
+    <!--Side Menu-->
+    <string name="Welcome">حياكم الله</string>
+    <string name="occassion">المناسبات</string>
+    <string name="my_orders">طلباتي</string>
+    <string name="wishlist">خياراتي المفضلة</string>
+    <string name="notifications">إخطارات</string>
+    <string name="my_cart">سلة المشتريات</string>
+    <string name="my_profile">ملفي الشخصي</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="guest">زائر</string>
+
+    <!--Logout Dialog-->
+    <string name="cancel">الغاء</string>
+    <string name="skip_common">تجاهل</string>
+    <string name="logout1">تسجيل خروج</string>
+    <string name="logout_msg">هل انت متاكد من تسجيل الخروج؟</string>
+
+    <!--Exit Dialog-->
+    <string name="exit_txt">هل انت متاكد بالخروج؟</string>
+    <string name="exit">خروج</string>
+    <string name="please_wait">الرجاء الآنتظار</string>
+
+
+    <!--product list-->
+    <string name="chocolate">شوكلاتة</string>
+    <string name="flowers">زهور</string>
+    <string name="combo">الآثنين معا</string>
+    <string name="qar">ر.ق</string>
+
+    <!--my profile-->
+    <string name="delivery_addresses">عنوان التوصيل</string>
+    <string name="add_new">اضف جديدة</string>
+    <string name="saved_cards">حفظ البطاقة</string>
+    <string name="credit_card">بطاقة الائتمان</string>
+    <string name="take_new_photo">خذ صورجديدة</string>
+    <string name="select_from_photo">اختر من القائمة</string>
+    <string name="add_photo">إضافة صورة</string>
+    <string name="delete_msg">هل أنت متأكد أنك تريد إزالة هذا السجل؟</string>
+
+    <!--product detail-->
+    <string name="quantity">الكمية</string>
+    <string name="add_to_cart">اضفها لسلة المشتريات</string>
+    <string name="total">المجموع الكلي</string>
+    <string name="paynow">الدفع الآن</string>
+    <string name="need_to_login">يجب تسجيل الدخول قبل ان تقوم بالشراءا</string>
+    <string name="login_pd">تسجيل الدخول</string>
+
+    <!--change password-->
+    <string name="change_pass">تغير كلمة السر</string>
+    <string name="old_pass"> كلمة السر القديمة</string>
+    <string name="new_pass">كلمة السر الجديدة</string>
+    <string name="confirm_new_pass">تاكيد كلمة السر</string>
+    <string name="change_password">تغيير كلمة السر</string>
+    <string name="security_code">رقم التفعيل</string>
+    <string name="resend_code">(<u>اعادة ارسال رقم التفعيل</u>)</string>
+
+    <!--add new address-->
+    <string name="add_address">ادخل عنوان جديد</string>
+    <string name="address_details">تفاصيل العنوان</string>
+    <string name="contact_name">اسم المتصل عليه</string>
+    <string name="street_address">عنوان الشارع</string>
+    <string name="city">المدينة</string>
+    <string name="building">لا للبناء.</string>
+    <string name="street">رقم الشارع.</string>
+    <string name="zone">منطقة</string>
+    <string name="mobile">رقم الموبايل</string>
+    <string name="save">حفظ</string>
+    <string name="addr_format">%1$s,%2$s,%3$s</string>
+
+    <!--add card number-->
+    <string name="add_new_card">اضف بطاقة جديدة</string>
+    <string name="add_new_credit_card">بطاقة ائتمان</string>
+    <string name="add_new_debit_card">بطاقة ائتمان</string>
+    <string name="card_details">تفاصيل البطاقة</string>
+    <string name="card_num"> رقم البطاقة</string>
+    <string name="name_on_card">اسم الشخص على البطاقة</string>
+    <string name="expiry_date">تاريخ الآنتهاء</string>
+    <string name="update">تحديث</string>
+    <string name="delete">مسح</string>
+    <string name="share">شارك</string>
+
+    <!--My Oder List-->
+    <string name="processing">تتم متابعة الطلبية حاليا</string>
+    <string name="delivered">تم التوصيل بنجاح</string>
+    <string name="canceled">تعذر التوصيل</string>
+    <string name="returned">عاد</string>
+    <string name="out_for_delivery">خارج للتوصيل</string>
+    <string name="fail_to_deliver">فشل في التسليم</string>
+    <string name="pending">مؤجلة</string>
+    <string name="dispatch">في الطريق للتوصيل</string>
+    <string name="rejected">تم رفض الطلب</string>
+
+    <!--Order Confirmation-->
+    <string name="order_confirmation">تاكيد الطلبية</string>
+    <string name="thank_you">شكرا لتسوقكم معنا ، رقم الطلبية هو</string>
+    <string name="you_can_check">في حالة رغبتكم في التاكد من وضع الطلبية توجه الي قائمة طلباتي</string>
+    <string name="back_to_dashboard">الرجوع للشاشة الرئيسية</string>
+    <string name="cvv">الرقم السري من الخلف</string>
+    <string name="save_card_for_later_use">حفظ بيانات البطاقة لسهولة الشراء مرة اخرى</string>
+    <string name="confirm">تاكيد</string>
+    <string name="back">الى الخلف</string>
+    <string name="terms_and_condition">الشروط والآحكام</string>
+    <string name="only_terms">الأحكام والشروط</string>
+    <string name="apply">تطبيق</string>
+    <!--<string name="my_order_link">طلباتي</string>-->
+    <string name="my_order_link">طلبي.</string>
+
+    <!--order review-->
+    <string name="order_date">تاريخ الطلب</string>
+    <string name="discount">الخصم</string>
+    <string name="order_total">المجموع الكلي</string>
+    <string name="coupon_code">رمز كوبون الخصم</string>
+    <string name="enter_your_code">أدخل رمزك هنا</string>
+    <string name="piece">قطعه</string>
+    <string name="card_message">كارد مساج</string>
+    <string name="greet_msg_text">بطاقات التهنئة</string>
+    <string name="std_card_message">التهنئات المعدة مسبقا من قبلنا</string>
+    <string name="tap_and_select_msg">قم بآختيار رسالة معده مسبقا من الخيارات</string>
+    <string name="custom_card_message">التهنئة التي ترقبون بها من قبلكم</string>
+    <string name="type_card_message">ادخل رسالتك الشخصية التي سيتم ارفاقها مع الطلب</string>
+    <string name="deliver_to_other_address">ارسالها لعنوان او شخص آخر</string>
+    <string name="cod">الدفع عند التسليم</string>
+    <string name="deliver_to_my_address">ارسالها لنفس عنواني المسجل مسبقا</string>
+    <string name="payment_with_card">الدفع ببطاقة البنك</string>
+    <string name="review_order">"1. متابعة طلب"</string>
+    <string name="delivery">2. توصيل</string>
+    <string name="payment">3. دفع</string>
+    <string name="expected_delivery_date">تاريخ التوصيل المتوقع</string>
+    <!--<string name="prefered_time">الوقت المفضل</string>-->
+    <string name="date_format_text">dd/mm/yyyy</string>
+    <string name="date_format">dd/MM/yyyy</string>
+    <string name="date_format_blank">00-00-0000</string>
+    <string name="time">زمن</string>
+    <string name="get_otp">اطلب رمز التاكيد على الهاتف</string>
+
+    <!--wish list-->
+    <string name="my_wishlist">قائمة المفضلات</string>
+    <string name="GPSAlertDialogMessage">لم يتم تمكين نظام تحديد المواقع العالمي (غس). هل تريد أن تذهب إلى قائمة الإعدادات؟</string>
+    <string name="Month">شهر</string>
+    <string name="year">عام</string>
+    <string name="remove_record">هل تريد بالتأكيد إزالة هذا السجل؟</string>
+
+    <!--order details-->
+
+    <string name="order_detail">تفاصيل الطلب</string>
+    <string name="order_detail_header_text">%1$s %2$s %3$s</string>
+    <string name="delivery_address">عنوان التوصيل</string>
+    <string name="discount_text">%1$s -</string>
+    <string name="cancel_order">إلغاء الطلب</string>
+    <string name="return_order">إرجاع الطلب</string>
+    <string name="confirm_cancel_text">هل تريد بالتأكيد إلغاء هذا الطلب؟</string>
+    <string name="confirm_return_text">هل تريد بالتأكيد إعادة هذا الطلب؟</string>
+
+
+    <string name="all_product">جميع المنتجات</string>
+    <string name="dash">---</string>
+    <string name="hours">ساعات</string>;
+    <string name="delivery_format_text">(%1$s - ETA: %2$s)</string>
+
+    <!--change store-->
+    <string name="select_country">اختر البلد للشحن</string>
+    <string name="storeid_not_match">لا يتطابق متجر المنتج مع متجرك الحالي.</string>
+    <string name="chnage_store_id">هل تريد بالتأكيد تغيير متجرك؟ سيتم مسح أي شيء في سلة التسوق الخاصة بك.</string>
+
+    <!--Notification-->
+    <string name="order_status_changed">تم التعديل في حالة الطلب</string>
+    <string name="processing_notification">يتم التعامل وتجهيز الطلب</string>
+    <string name="out_for_delivery_notification">يتم توصيل الطلب الان عن طريق المندوب</string>
+    <string name="delivered_notification">تم التوصيل</string>
+    <string name="cancelled_notification">تم الإلغاء</string>
+    <string name="returned_notification">تم الإرجاع</string>
+    <string name="fail_to_deliver_notification">فشل في التسليم</string>
+    <string name="delete_all">مسح الكل</string>
+    <string name="delete_all_msg">هل أنت متاكد من مسح كامل التفاصيل ؟</string>
+</resources>

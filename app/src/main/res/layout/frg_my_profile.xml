@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMyProfile"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/yellow"
+                android:gravity="center"
+                android:text="@string/my_profile"
+                android:textColor="@color/brown"
+                android:textSize="10dp" />
+
+            <FrameLayout
+                android:id="@+id/layProfilePic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="33dp"
+                android:paddingTop="20dp">
+
+                <View
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_shape_yellow" />
+
+                <com.lecarrousel.customview.CircleImageView
+                    android:id="@+id/ivProfilePic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="80dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_camera" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/ivEmailAddress"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvEmailAddressLabel"
+                            style="@style/stl_txt"
+                            android:layout_marginEnd="5dp"
+                            android:text="@string/email_address" />
+
+                        <TextView
+                            android:id="@+id/tvEmailAddress"
+                            style="@style/stl_txt"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivEmailAddress"
+                        android:layout_width="32dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="2dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_mail" />
+                </RelativeLayout>
+
+                <View style="@style/stl_view" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/ivName"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            style="@style/stl_txt"
+                            android:layout_marginEnd="5dp"
+                            android:text="@string/name" />
+
+                        <EditText
+                            android:id="@+id/etName"
+                            style="@style/stl_editTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvName"
+                            android:layout_marginEnd="5dp"
+                            android:layout_toStartOf="@+id/ivName"
+                            android:hint="@string/hint_enter_name"
+                            android:imeOptions="actionNext"
+                            android:maxLength="50" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivName"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="2dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_user" />
+                </RelativeLayout>
+
+                <View style="@style/stl_view" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/layCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/ivCountryFlag"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lblCountry"
+                            style="@style/stl_txt"
+                            android:layout_marginEnd="5dp"
+                            android:text="@string/country" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spCountry"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_below="@+id/tvQuantityLabel"
+                                android:layout_centerHorizontal="true"
+                                android:background="@color/white"
+                                android:popupBackground="@color/colorPrimaryDark"
+                                android:spinnerMode="dialog"
+                                android:textColor="#ffffff"
+                                android:textSize="0dp"
+                                android:visibility="visible" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvQuantityLabel"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="2dp">
+
+                                <TextView
+                                    android:id="@+id/tvCountry"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="QUATAR"
+                                    android:textColor="@color/brown"
+                                    android:textSize="14dp" />
+
+                                <ImageView
+                                    android:layout_width="11dp"
+                                    android:layout_height="7dp"
+                                    android:layout_marginStart="5dp"
+                                    android:src="@drawable/ic_down_arrow_qty" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivCountryFlag"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="2dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_country" />
+                </RelativeLayout>
+
+                <View style="@style/stl_view" />
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/white"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingEnd="10dp"-->
+                <!--android:paddingStart="10dp"-->
+                <!--android:paddingTop="10dp">-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toStartOf="@+id/ivMobNo"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvMobNo"-->
+                <!--style="@style/stl_txt"-->
+                <!--android:layout_marginEnd="5dp"-->
+                <!--android:text="@string/mobile_number" />-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/tvMobNo"-->
+                <!--android:layout_marginEnd="5dp"-->
+                <!--android:layout_toStartOf="@+id/ivMobNo"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="1">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvCountryCode"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=""-->
+                <!--android:textColor="@color/brown"-->
+                <!--android:textSize="14dp" />-->
+
+                <!--<EditText-->
+                <!--android:id="@+id/etMobNo"-->
+                <!--style="@style/stl_editTxt"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="@string/hint_enter_mobile"-->
+                <!--android:imeOptions="actionDone"-->
+                <!--android:inputType="number"-->
+                <!--android:maxLength="15"-->
+                <!--android:paddingStart="5dp" />-->
+                <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/ivMobNo"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginStart="2dp"-->
+                <!--android:scaleType="centerInside"-->
+                <!--android:src="@drawable/ic_phone" />-->
+                <!--</RelativeLayout>-->
+                <include
+                    android:id="@+id/layMobileEdit"
+                    layout="@layout/edit_text_mobile" />
+
+                <View style="@style/stl_view" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSave"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_background_yellow"
+                android:gravity="center"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="@string/save"
+                android:textColor="@color/brown"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layChangePass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tvChangePasslbl"
+                        style="@style/stl_txt"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/change_password" />
+
+                    <TextView
+                        android:id="@+id/tvChangePass"
+                        style="@style/stl_editTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvChangePasslbl"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toStartOf="@+id/ivChangePass"
+                        android:hint="@string/hint_setup_new_pass"
+                        android:maxLength="50" />
+
+                    <ImageView
+                        android:id="@+id/ivChangePass"
+                        android:layout_width="20dp"
+                        android:layout_height="4dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="2dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_pass" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tvDeliveryLbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/delivery_addresses"
+                        android:textColor="@color/brown"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/tvAddNewAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/add_new"
+                        android:textColor="@color/gray2"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvAddressList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp" />
+
+                <!--<RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tvCardsLbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/saved_cards"
+                        android:textColor="@color/brown"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/tvAddNewCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/add_new"
+                        android:textColor="@color/gray2"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvCardList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>-->
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</layout>

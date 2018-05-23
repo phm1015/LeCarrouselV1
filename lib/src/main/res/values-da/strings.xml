@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="crop__saving">Lagring billede</string>
+    <string name="crop__wait">Vent venligst…</string>
+    <string name="crop__pick_error">Ingen billedkilder rådighed</string>
+
+    <string name="crop__done">Færdig</string>
+    <string name="crop__cancel" tools:ignore="ButtonCase">Annuller</string>
+
+</resources>

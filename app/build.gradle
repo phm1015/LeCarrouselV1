@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.lecarrousel"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 4
+        versionName "1.3"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    testCompile 'junit:junit:4.12'
+    // Data Binding Lib
+    compile 'com.google.dagger:dagger:2.10-rc2'
+    // Recycler View
+    compile 'com.android.support:recyclerview-v7:25.2.0'
+
+    // Retrofit 2
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    // Glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    // FCM
+    compile 'com.google.firebase:firebase-messaging:9.0.2'
+    // Permission Check
+    compile 'com.karumi:dexter:4.0.0'
+    //viewpager rtl
+    compile 'com.booking:rtlviewpager:1.0.1'
+    // Image Cropping
+    compile 'com.theartofdev.edmodo:android-image-cropper:2.3.+'
+
+    //Taro Video
+    compile 'im.ene.toro2:toro:2.2.0'
+    // include Toro extended helper (Toro and ExoPlayer v2 extension is included already)
+    compile 'im.ene.toro2:toro-extended:2.2.0'
+    // include extension for ExoPlayer v2 (Toro is included already)
+    compile 'im.ene.toro2:toro-ext-exoplayer2:2.2.0'
+    // include extension for ExoPlayer v1 (Toro is included already)
+    compile 'im.ene.toro2:toro-ext-exoplayer:2.2.0'
+    // include extension for Legacy MediaPlayer (Toro is included already)
+    compile 'im.ene.toro2:toro-ext-mediaplayer:2.2.0'
+    compile files('libs/acra-4.5.0.jar')
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white2">
+
+        <RelativeLayout
+            android:id="@+id/layUserInfo"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/layProfilePic"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp">
+
+                <View
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle_shape_yellow" />
+
+                <ImageView
+                    android:id="@+id/ivProfilePic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvWelcomeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@+id/layProfilePic"
+                android:layout_toRightOf="@+id/layProfilePic"
+                android:text="@string/Welcome"
+                android:textColor="@color/gray1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWelcomeLabel"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/layProfilePic"
+                android:layout_toRightOf="@+id/layProfilePic"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/guest"
+                android:textColor="@color/gray1"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:id="@+id/ivCountryFlag"
+                android:layout_alignParentEnd="true"
+                android:layout_width="32dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layLangugeButtons"
+            android:layout_below="@+id/layUserInfo">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/lvMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/gray5"
+                        android:dividerHeight="1dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray5" />
+
+                    <LinearLayout
+                        android:id="@+id/laySocialMediaIcons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="5dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvSocialMedia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layLangugeButtons"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_above="@+id/layTerms"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tvEnglish"
+                style="@style/stl_txt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/rounded_background_yellow"
+                android:gravity="center"
+                android:text="@string/english" />
+
+
+            <TextView
+                android:id="@+id/tvArebic"
+                style="@style/stl_txt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/rounded_background_yellow"
+                android:gravity="center"
+                android:text="@string/arabic" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/tvTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:textSize="11dp"
+                android:textColor="@color/gray2"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

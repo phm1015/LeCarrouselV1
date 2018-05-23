@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/layMain"
+        android:background="@color/gray6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:text="@string/order_confirmation"
+            android:textColor="@color/brown"
+            android:textSize="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/layContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHeader"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvThankYou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/thank_you"
+                android:textColor="@color/gray1"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tvOrderId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvThankYou"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="123456"
+                android:textColor="@color/gray1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvOrderId"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/gray1"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/tvYouCan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTerms"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/gray1"
+                android:textSize="14dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvBackTo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/layContent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/rounded_background_yellow"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="@string/back_to_dashboard"
+            android:textColor="@color/brown"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+</layout>

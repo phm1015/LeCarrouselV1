@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#201215</color>
+    <color name="colorPrimaryDark">#201215</color>
+    <color name="colorAccent">#201215</color>
+
+
+    <!--COLOUR CODE FROM 11 HAS OPPACITY-->
+    <!--Transpperent-->
+    <color name="transparent">#00000000</color>
+    <!--Basic Colour-->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!--White Shades-->
+    <color name="white2">#F2F2F2</color>
+
+    <!--Yellow Shades-->
+    <!--Yellow Shades-->
+
+    <color name="yellow">#F9C924</color>
+    <color name="yellow2">#FDD776</color>
+    <color name="yellow3">#FDD776</color>
+    <color name="yellow_transparent">#66000000</color>
+
+    <!--Brown-->
+    <color name="brown">#201215</color>
+    <color name="brown_light">#55201215</color>
+
+    <!--red-->
+    <color name="red">#f9211e</color>
+    <color name="red1">#D0011B</color>
+
+    <!--green-->
+    <color name="green">#417505</color>
+    <!--Gray Shades-->
+    <color name="gray1">#444444</color>
+    <color name="gray2">#808080</color>
+    <color name="gray3">#919191</color>
+    <color name="gray5">#D7D7D7</color>
+    <color name="gray6">#f1f1f1</color>
+    <color name="gray7">#aaaaaa</color>
+    <color name="gray11">#70303031</color>
+    <color name="unread">#FFF6DE</color>
+
+</resources>

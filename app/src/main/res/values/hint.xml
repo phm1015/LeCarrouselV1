@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hint_enter_name">Enter your first name and last name</string>
+    <string name="hint_enter_email">Enter your email address</string>
+    <string name="hint_enter_password">Enter your password</string>
+    <string name="hint_enter_mobile">Enter your mobile number</string>
+    <string name="hint_enter_confirm_password">Enter your password again</string>
+    <string name="hint_enter_card_num">Enter card number</string>
+    <string name="hint_enter_name_on_card">Enter name on card</string>
+    <string name="hint_enter_expiry_date">Enter expiry date</string>
+    <string name="hint_address_plate">Address Plate</string>
+
+    <!--hint new address-->
+    <string name="hint_enter_address">Enter your address</string>
+    <string name="hint_enter_city">Enter your city name</string>
+
+    <!--hint change password-->
+    <string name="hint_enter_old_pass">Enter your old password</string>
+    <string name="hint_enter_new_pass">Enter your new password</string>
+    <string name="hint_confirm_new_pass">Enter your new password again</string>
+
+    <!--my profile-->
+    <string name="hint_setup_new_pass">Setup your new password</string>
+
+    <string name="hint_enter_security_code">Enter security code</string>
+</resources>

@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/layMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <include
+            android:id="@+id/layHeader"
+            layout="@layout/header" />
+
+        <LinearLayout
+            android:id="@+id/layUserInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layHeader"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvRegisterAcc"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/yellow"
+                android:gravity="center"
+                android:text="@string/register_account"
+                android:textColor="@color/brown"
+                android:textSize="10dp" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/ivMail"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvEmailAddLabel"
+                                style="@style/stl_txt"
+                                android:layout_marginEnd="5dp"
+                                android:text="@string/email_address" />
+
+
+                            <EditText
+                                android:id="@+id/etEmail"
+                                style="@style/stl_editTxt"
+                                android:layout_marginEnd="5dp"
+                                android:hint="@string/hint_enter_email"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress" />
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:id="@+id/ivMail"
+                            android:layout_width="32dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_mail" />
+                    </RelativeLayout>
+
+                    <View style="@style/stl_view" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/ivPass"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvPasswordLabel"
+                                style="@style/stl_txt"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:text="@string/password" />
+
+
+                            <EditText
+                                android:id="@+id/etPassword"
+                                style="@style/stl_editTxt"
+                                android:layout_marginEnd="5dp"
+                                android:hint="@string/hint_enter_password"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPassword" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ivPass"
+                            android:layout_width="20dp"
+                            android:layout_height="4dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_pass" />
+                    </RelativeLayout>
+
+                    <View style="@style/stl_view" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/ivConfmPass"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvPasswordConfmLabel"
+                                style="@style/stl_txt"
+                                android:layout_marginEnd="5dp"
+                                android:text="@string/confirm_password" />
+
+
+                            <EditText
+                                android:id="@+id/etConfPassword"
+                                style="@style/stl_editTxt"
+                                android:layout_marginEnd="5dp"
+                                android:hint="@string/hint_enter_confirm_password"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPassword" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ivConfmPass"
+                            android:layout_width="20dp"
+                            android:layout_height="4dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_pass" />
+                    </RelativeLayout>
+
+                    <View style="@style/stl_view" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/ivName"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvName"
+                                style="@style/stl_txt"
+                                android:layout_marginEnd="5dp"
+                                android:text="@string/name" />
+
+                            <EditText
+                                android:id="@+id/etName"
+                                style="@style/stl_editTxt"
+                                android:layout_marginEnd="5dp"
+                                android:hint="@string/hint_enter_name"
+                                android:imeOptions="actionNext" />
+
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:id="@+id/ivName"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_user" />
+                    </RelativeLayout>
+
+                    <View style="@style/stl_view" />
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/layCountry"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/ivCountryFlag"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lblCountry"
+                                style="@style/stl_txt"
+                                android:layout_marginEnd="5dp"
+                                android:text="@string/country" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <Spinner
+                                    android:id="@+id/spCountry"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:background="@color/white"
+                                    android:popupBackground="@color/colorPrimaryDark"
+                                    android:spinnerMode="dialog"
+                                    android:textColor="#ffffff"
+                                    android:textSize="0dp"
+                                    android:visibility="visible" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/tvCountry"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="QUATAR"
+                                        android:textColor="@color/brown"
+                                        android:textSize="14dp" />
+
+                                    <ImageView
+                                        android:layout_width="11dp"
+                                        android:layout_height="7dp"
+                                        android:layout_marginStart="5dp"
+                                        android:src="@drawable/ic_down_arrow_qty" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ivCountryFlag"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="2dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_country" />
+                    </RelativeLayout>
+
+                    <View style="@style/stl_view" />
+
+                    <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="10dp">-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tvMobileNo"-->
+                    <!--style="@style/stl_txt"-->
+                    <!--android:layout_marginEnd="5dp"-->
+                    <!--android:text="@string/mobile_number" />-->
+
+                    <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginEnd="5dp"-->
+                    <!--android:weightSum="1">-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tvCountryCode"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:text="00971"-->
+                    <!--android:textColor="@color/brown"-->
+                    <!--android:textSize="14dp" />-->
+
+                    <!--<EditText-->
+                    <!--android:id="@+id/etMobileNo"-->
+                    <!--style="@style/stl_editTxt"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_toRightOf="@+id/tvCountryCode"-->
+                    <!--android:hint="@string/hint_enter_mobile"-->
+                    <!--android:imeOptions="actionDone"-->
+                    <!--android:inputType="number"-->
+                    <!--android:maxLength="15"-->
+                    <!--android:paddingStart="5dp" />-->
+                    <!--</RelativeLayout>-->
+                    <!--</LinearLayout>-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/ivMobileNo"-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:scaleType="centerInside"-->
+                    <!--android:src="@drawable/ic_phone" />-->
+                    <!--</RelativeLayout>-->
+
+                    <include
+                        android:id="@+id/layMobileEdit"
+                        layout="@layout/edit_text_mobile" />
+
+                    <View style="@style/stl_view" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_gravity="center">
+
+                        <CheckBox
+                            android:id="@+id/cbTerms"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/selector_radio"
+                            android:button="@null"
+                            android:layout_marginEnd="10dp"/>
+
+                        <TextView
+                            android:id="@+id/lblTerms"
+                            style="@style/stl_txt"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/cbTerms"
+                            android:layout_marginEnd="5dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:id="@+id/tvRegister"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@+id/layCancel"
+                            android:background="@color/yellow"
+                            android:gravity="center"
+                            android:text="@string/proceed"
+                            android:textColor="@color/brown_light"
+                            android:textSize="14dp" />
+
+                        <RelativeLayout
+                            android:id="@+id/layCancel"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:background="@color/yellow3"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tvCancel"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/rounded_background_darkbrown"
+                                android:gravity="center"
+                                android:text="@string/cancel"
+                                android:textAllCaps="true"
+                                android:textColor="@color/gray5"
+                                android:textSize="10dp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/laySignIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/tvHaveAnAccount"
+                            style="@style/stl_txt"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/have_an_account" />
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="14dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_create_account" />
+                    </RelativeLayout>
+
+                    <View style="@style/stl_view" />
+
+                    <TextView
+                        android:id="@+id/tvForgotPass"
+                        style="@style/stl_txt"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        android:text="@string/forgot_password" />
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

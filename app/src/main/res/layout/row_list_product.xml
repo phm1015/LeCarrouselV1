@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/layMain"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/ivPlaceHolder"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:src="@color/gray5" />
+
+            <ImageView
+                android:id="@+id/ivProduct"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="11dp"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Pink Rose"
+                    android:textColor="@color/gray1"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tvProductDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:maxLines="1"
+                    android:text="Bunch of pink roses"
+                    android:textColor="@color/gray1"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:id="@+id/layPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvProductPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:text="123"
+                        android:textColor="@color/yellow"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tvProductCurrency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:text="@string/qar"
+                        android:textColor="@color/gray2"
+                        android:textSize="10dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="27dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:paddingBottom="5dp"
+                android:paddingStart="5dp"
+                android:src="@drawable/ic_cross" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

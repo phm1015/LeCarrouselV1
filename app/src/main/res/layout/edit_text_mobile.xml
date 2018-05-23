@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/ivMobileNo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMobileNo"
+                style="@style/stl_txt"
+                android:layout_marginEnd="5dp"
+                android:text="@string/mobile_number" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp">
+
+                <TextView
+                    android:id="@+id/tvCountryCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/brown"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/etMobileNo"
+                    style="@style/stl_editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvCountryCode"
+                    android:gravity="left"
+                    android:hint="@string/hint_enter_mobile"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:paddingStart="3dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivMobileNo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_phone" />
+    </RelativeLayout>
+</layout>

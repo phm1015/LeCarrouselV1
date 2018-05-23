@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/layMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Rose"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/gray1"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tvProductDescrp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-4dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="Single Red Rose"
+                    android:textColor="@color/gray2"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="300dp">
+
+                <ImageView
+                    android:id="@+id/ivPlaceHolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@color/gray5" />
+
+                <ImageView
+                    android:id="@+id/ivProductImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivProductImg">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvProductPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:text="123"
+                        android:textColor="@color/yellow"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tvProductCurrency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/qar"
+                        android:textColor="@color/gray2"
+                        android:textSize="10dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivProductIsFavorite"
+                    android:layout_width="40dp"
+                    android:layout_height="37dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_heart_empty" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvOfferText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:minWidth="80dp"
+            android:padding="5dp"
+            android:textColor="@color/brown"
+            android:textSize="12dp" />
+    </FrameLayout>
+</layout>
